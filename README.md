@@ -25,7 +25,7 @@ Raw national datasets are **not included** because of their size. See the resear
 
 ## Experimental results
 
-### H1 — Compare regression models
+### H1 : Compare regression models
 
 National 2024 sample with **physical features only**:
 
@@ -38,7 +38,7 @@ National 2024 sample with **physical features only**:
 
 **Finding:** Gradient Boosting leads on MAE but not on RMSE or R². H1 is partially supported.
 
-### H2 — Add geography
+### H2 : Add geography
 
 | Gradient Boosting configuration | MAE (€) | R² |
 |:--|--:|--:|
@@ -47,7 +47,7 @@ National 2024 sample with **physical features only**:
 
 **Finding:** Adding department geography reduces MAE by approximately €23,890 (20%). H2 is supported.
 
-### H3 — Does the DPE label improve prediction?
+### H3 : Does the DPE label improve prediction?
 
 A **controlled ablation study** compares identical Gradient Boosting configurations on the same **22,641 matched Paris transactions**:
 
@@ -58,7 +58,7 @@ A **controlled ablation study** compares identical Gradient Boosting configurati
 
 **Finding:** The DPE label did not improve this model on this specific matched Paris subset. This is **not** evidence that energy performance has no influence on sale prices. H3 is not supported.
 
-### H4 — Temporal validation
+### H4 : Temporal validation
 
 | Evaluation setup | MAE (€) | R² |
 |:--|--:|--:|
